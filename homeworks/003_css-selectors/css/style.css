@@ -1,0 +1,17 @@
+@import url('reset.css');
+
+.header {
+  color: green;
+}
+.main-title {
+  color: blue;
+}
+.text_title {
+  color: pink;
+}
+.sub-title {
+  color: blueviolet;
+}
+.list ul > li {
+  color: green;
+}
