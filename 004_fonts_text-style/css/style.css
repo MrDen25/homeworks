@@ -1,0 +1,31 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+.header {
+  color: green;
+}
+.main-title {
+  color: blue;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+.text_title {
+  color: pink;
+  font-family: 'Inter', serif;
+}
+.text p {
+  text-align: justify;
+  line-height: 1.4;
+}
+.sub-title {
+  color: blueviolet;
+  font-family: 'Circular-Black';
+  font-weight: 900;
+  font-size: 20px;
+}
+.list ul > li {
+  color: green;
+  font-family: 'Circular-Medium';
+  text-decoration: line-through;
+}
