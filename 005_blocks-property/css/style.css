@@ -1,0 +1,53 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+.choose {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.choose-title {
+  font-weight: 800;
+  line-height: 1.25;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 72px;
+  text-transform: uppercase;
+}
+.choose-items {
+  font-size: 0;
+  margin: 0 -34px;
+}
+.choose-item {
+  display: inline-block;
+  width: 33.333%;
+
+  padding: 0 34px;
+  margin-bottom: 68px;
+  vertical-align: top;
+}
+.choose-content {
+  text-align: center;
+  font-size: 16px;
+}
+.choose-content img {
+  margin-bottom: 24px;
+  width: 50px;
+  height: 50px;
+}
+
+.item-title {
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+.item-text {
+  color: #7e7f7c;
+  line-height: 1.25;
+}
