@@ -1,0 +1,72 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+.header {
+  background-image: url('../img/header-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 114px 0;
+  margin-bottom: 30px;
+}
+.header_plug {
+  width: 50%;
+  display: inline-block;
+}
+.header_content {
+  display: inline-block;
+}
+.header_subtitle {
+  color: #2f302c;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.header_title {
+  color: #2f302c;
+  font-size: 96px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  line-height: 1.04;
+  margin-bottom: 16px;
+}
+.line {
+  height: 1px;
+  max-width: 308px;
+  max-height: 1px;
+  background-color: #2f302c;
+  margin-bottom: 36px;
+}
+.text_title {
+  color: #2f302c;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.header_text {
+  color: #7e7f7c;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.subscription {
+  padding: 0 20px;
+}
+.subscription_item {
+  color: #252b42;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 1.71;
+  background: url('../img/check.png') top left/auto auto no-repeat;
+  min-height: 32px;
+  padding-left: 45px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+}
