@@ -56,7 +56,13 @@
   line-height: 1.25;
 }
 .subscription {
-  padding: 0 20px;
+  padding: 20px;
+}
+.subscription_container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
 }
 .subscription_item {
   color: #252b42;
@@ -69,4 +75,7 @@
   padding-left: 45px;
   margin-bottom: 20px;
   padding-top: 5px;
+}
+.subscription_item.no-active {
+  background: url('../img/check-gray.png') top left/auto auto no-repeat;
 }
