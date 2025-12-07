@@ -9,12 +9,10 @@
   padding: 114px 0;
   margin-bottom: 30px;
 }
-.header_plug {
-  width: 50%;
-  display: inline-block;
-}
+
 .header_content {
-  display: inline-block;
+  max-width: 912px;
+  margin-left: auto;
 }
 .header_subtitle {
   color: #2f302c;
