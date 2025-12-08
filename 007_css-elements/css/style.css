@@ -26,6 +26,13 @@ body {
   font-size: 26px;
   color: #fff;
 }
+.game_start-title::after {
+  content: '';
+  display: block;
+  background: url('../img/arrow.png') 0 0 / contain no-repeat;
+  height: 100px;
+  width: 100px;
+}
 .game_start img {
   width: 300px;
   height: 200px;
