@@ -1,0 +1,68 @@
+@import url('reset.css');
+@import url('fonts.css');
+body {
+  font-family: 'Lator', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+.wrapper {
+  padding: 20px;
+}
+h2 {
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h2:not(.header h2, .footer h2) {
+  margin-bottom: 40px;
+}
+
+section:not(:last-of-type) {
+  margin-bottom: 50px;
+}
+section {
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.header,
+.footer {
+  background-color: #fff1ea;
+  padding: 30px;
+  box-shadow: 0px 0px 18px 1px;
+}
+footer {
+  margin-bottom: 10px;
+}
+p {
+  display: inline-block;
+  max-width: 40%;
+  margin-left: 50px;
+}
+
+.shanti_title {
+  margin-bottom: 50px;
+}
+.leaf-one {
+  background: url('../img/leaf-one.webp') 0 0 / contain no-repeat;
+}
+.leaft-one_title {
+}
+.leaf-one_text {
+  margin-left: 12%;
+}
+
+.circle_title {
+  margin-bottom: 50px;
+}
+.yoga-three {
+  text-align: center;
+}
+.yoga-three_title {
+}
+.yoga-three_img-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
