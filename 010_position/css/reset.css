@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
