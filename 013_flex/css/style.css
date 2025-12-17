@@ -1,0 +1,138 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.wrapper > .main {
+  flex-grow: 1;
+}
+
+[class*='__container'] {
+  max-width: 1432px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.featured-products {
+  padding: 82px 0;
+}
+.featured-products__container {
+  text-align: center;
+}
+.featured-products__title {
+  color: #2f302c;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+}
+.menu-featured-products {
+  margin-bottom: 80px;
+}
+.menu-featured-products__list {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.menu-featured-products__link {
+  color: #2f302c;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  position: relative;
+}
+.menu-featured-products__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 0;
+  background-color: black;
+  transition: width 0.4s ease-in-out;
+}
+.menu-featured-products__link:hover::after {
+  width: 100%;
+  height: 2px;
+}
+.menu-featured-products__link--active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.featured-products__row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 36px;
+  row-gap: 72px;
+}
+.featured-products__column {
+  flex: 1 1 380px;
+}
+.featured-products__column > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+.featured-products__column .column-featured-products__link {
+  margin-bottom: 32px;
+}
+.column-featured-products__link {
+  overflow: hidden;
+}
+.column-featured-products__link img {
+  transition: 0.3s scale;
+}
+.column-featured-products__link:hover img {
+  scale: 1.1;
+}
+
+.why-us {
+  padding-bottom: 82px;
+}
+.why-us__container {
+  max-width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+.why-us__title {
+  color: #2f302c;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 72px;
+}
+.why-us__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 68px;
+}
+.why-us__column {
+  flex: 1 1 320px;
+}
+.why-us__column > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+.column-why-us__img img {
+  object-fit: cover;
+  height: 55px;
+}
+.column-why-us__title {
+  color: #2f302c;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.column-why-us__text p {
+  color: #7e7f7c;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}

@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  display: block;
+}
+li {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
