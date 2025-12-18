@@ -1,0 +1,152 @@
+@import url('./fonts.css');
+@import url('./reset.css');
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex-grow: 1;
+}
+[class*='__container'] {
+  max-width: 1432px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.register {
+  padding: 82px 15px;
+  text-align: center;
+}
+.register__content > *:not(:last-child) {
+  margin-bottom: 36px;
+}
+.register__title {
+  color: #2f302c;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.register__subtitle {
+  color: #7e7f7c;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.form {
+  padding: 82px 0;
+}
+.form__row {
+  display: flex;
+  gap: 80px;
+}
+.form__item {
+}
+.item-form {
+  flex: 0 1 712px;
+  display: flex;
+  flex-direction: column;
+}
+.item-form__title {
+  color: #2f302c;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 36px;
+}
+.item-form__text p {
+  color: #7e7f7c;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 72px;
+}
+.item-form a {
+  color: #2f302c;
+  font-weight: 700;
+}
+.item-form a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.input-form {
+  margin-bottom: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.item-form__wrapper {
+  flex-grow: 1;
+}
+.input-form__item {
+  flex: 1 1 250px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  padding: 10px 5px;
+}
+.input-form__item::placeholder {
+}
+.input-form__item:focus::placeholder {
+  color: black;
+  transition: color 0.5s;
+}
+.input-form__item:focus {
+  border-bottom: 2px solid black;
+  transition: border-bottom 0.5s;
+}
+.input-form__tel {
+  flex: 1 1 700px;
+}
+.input-form__repeat-password {
+}
+.item-form__button button {
+  padding: 12px 104px;
+  color: #fff;
+  background-color: #2f302c;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  transition: color 0.3s;
+}
+.item-form__button button:hover {
+  color: lightgrey;
+}
+.item-discount {
+  position: relative;
+  background-color: #f6f6f6;
+  flex: 0 1 600px;
+  display: flex;
+  padding: 0px 0px 60px 80px;
+  min-height: 496px;
+}
+.item-discount__text::before {
+  content: 'HOT';
+  color: #fff;
+  background: red;
+  border-radius: 5px;
+  padding: 8px;
+  position: absolute;
+  top: -48px;
+  left: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.item-discount__text {
+  position: relative;
+  align-self: flex-end;
+}
+.item-discount__photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.item-discount__text p {
+  color: #2f302c;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.25;
+}
