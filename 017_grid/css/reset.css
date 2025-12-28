@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+*::before,
+*::after {
+  display: inline-block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-family: 'Lato', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  display: inline-block;
+}
+li {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+input {
+  width: 100%;
+}
