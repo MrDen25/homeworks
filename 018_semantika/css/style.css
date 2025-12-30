@@ -278,7 +278,8 @@
 }
 @media (width<1920px) {
   .leaf-one,
-  .leaf-two {
+  .leaf-two,
+  .practice__leaf {
     display: none;
   }
 }
@@ -300,6 +301,7 @@
 /*__________PRACTICE__________*/
 
 .practice {
+  position: relative;
 }
 .practice__container {
 }
@@ -368,6 +370,11 @@
   color: #ba936f;
   background-color: #fff;
   border: 2px solid #ba936f;
+}
+.practice__leaf {
+  position: absolute;
+  right: 0;
+  top: 75%;
 }
 @media (width<768px) {
   img {
@@ -502,14 +509,35 @@
   color: #343434;
   min-width: 620px;
 }
-td {
+.shedule__table table td {
   border-bottom: 1px solid #ddc9b8;
   border-top: 1px solid #ddc9b8;
   height: 66px;
 }
+.shedule__table table td a {
+  position: relative;
+}
+.shedule__table table td a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 .shedule__gallery {
   flex-basis: 503px;
   flex-grow: 1;
+}
+.shedule__table table td:nth-child(2) a::after {
+  content: '';
+  position: absolute;
+  background: url('../img/shedule/arrowright.png');
+  background-size: contain;
+  top: 0;
+  right: -19px;
+  width: 15px;
+  height: 15px;
+  transition: scale 0.2s;
+}
+.shedule__table table td:nth-child(2) a:hover::after {
+  scale: 1.2;
 }
 @media (width<1050px) {
   .shedule {
