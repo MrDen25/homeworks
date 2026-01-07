@@ -1,10 +1,11 @@
 @import url('./fonts.css');
 @import url('./reset.css');
+
 .wrapper {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: clip;
 }
 [class*='__container'] {
   max-width: 64.375rem;
@@ -26,7 +27,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 80px;
+  min-height: 5rem;
+  overflow: clip;
+}
+.header__wrapper {
+  transition: all 0.3s;
+}
+.header__wrapper--scroll {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  top: 0;
+}
+.header__wrapper--scroll + .header-hero {
+  padding-top: calc(7rem + 5rem);
 }
 .header__logo {
   font-family: 'Playfair Display', sans-serif;
@@ -63,29 +77,33 @@
     width: 100%;
     height: 100%;
     background-color: #9d816c;
-    padding-top: 88px;
+    padding-top: 100px;
     z-index: 3;
     overflow: auto;
     transition: left 0.3s;
   }
-  .menu-header__active:before {
+  .menu-header:before {
     content: '';
     position: fixed;
     width: 100%;
     height: 80px;
-    left: 0;
+    left: 100%;
     top: 0;
     z-index: 4;
-    background-color: #9d816c;
+    background-color: #212121;
     z-index: 4;
+    transition: left 0.3s;
+  }
+  .menu-header__active:before {
+    left: 0;
   }
   .menu-header__list {
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 80px;
   }
   .menu-header__link {
-    font-size: 24px;
+    font-size: 2.25rem;
   }
   .header__icon {
     display: block;
@@ -139,11 +157,15 @@
 
 /*____HEADER-HERO___*/
 .header-hero {
-  padding-top: 112px;
+  position: relative;
+  padding-top: 7rem;
 }
+
 .header-hero__container {
   display: flex;
   justify-content: flex-end;
+}
+.header-hero__container--animate {
 }
 .header-hero__content {
   text-align: center;
@@ -181,6 +203,11 @@
   padding: 84px 0;
 }
 .about-us__container {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.about-us__container--animate {
+  opacity: 1;
 }
 .about-us__title {
   text-align: center;
@@ -344,4 +371,8 @@
   .products__menu {
     margin-bottom: 1.25rem;
   }
+}
+.item {
+  height: 200px;
+  background-color: green;
 }

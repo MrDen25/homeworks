@@ -16,7 +16,9 @@ body {
   width: 100%;
   line-height: normal;
   font-family: 'Playfair Display', sans-serif;
+  transition: opacity 0.3s;
 }
+
 h1,
 h2,
 h3,
