@@ -1,0 +1,62 @@
+@use 'typo';
+@use 'colors' as *;
+@use 'mixins' as *;
+
+//картка каталогу
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(toRem(380), 100%), 1fr));
+  gap: toRem(36);
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(32);
+
+  &__link {
+    aspect-ratio: 440/574;
+    background-color: $black-7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--top {
+      align-items: flex-start;
+    }
+    &--bottom {
+      align-items: flex-end;
+    }
+    &--left {
+    }
+  }
+
+  &__img {
+    flex-grow: 0;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(12);
+    align-items: center;
+  }
+
+  &__title {
+  }
+
+  &__link-title {
+  }
+
+  &__rating {
+  }
+
+  &__price {
+  }
+}
+.rating {
+  &__item {
+  }
+
+  &__item--icon-s-star {
+  }
+}

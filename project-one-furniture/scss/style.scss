@@ -1,0 +1,30 @@
+@use 'reset';
+@use 'fonts';
+@use 'icons';
+@use 'colors' as *;
+@use 'typo' as *;
+@use 'mixins';
+@use 'components';
+body {
+  font-family: 'Lato';
+  font-weight: 500;
+  color: $black-1;
+}
+[class*='__container'] {
+  padding-inline: toRem(15);
+  max-width: 1422px;
+  margin: 0 auto;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wrapper {
+  main {
+    position: relative;
+    flex-grow: 1;
+    overflow: clip;
+    color: $black-1;
+  }
+}
